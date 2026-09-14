@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="it" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contattaci | Atelier Bris</title>
+    <meta name="description" content="Contatta Atelier Bris per app, esperienze immersive, VR e format su misura." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body style="--hero-image: url('../assets/hero.png'); --abstract-image: url('../assets/atelier-bris-abstract-clean.jpg')">
+    <div class="site-shell">
+      <header class="site-header">
+        <nav class="nav" aria-label="Navigazione principale">
+          <a class="brand" href="../index.html"><img src="../assets/atelier-bris-logo-white.png" alt="Atelier Bris - Technology for Culture" /></a>
+          <button class="menu-toggle" type="button" aria-label="Apri menu" aria-expanded="false" aria-controls="primary-menu" data-menu-toggle><span></span><span></span><span></span></button>
+          <div class="nav-links" id="primary-menu" data-menu-panel>
+            <a href="../index.html">Home</a>
+            <a href="../apps/index.html">Apps</a>
+            <a href="../experiences/index.html">Experiences</a>
+            <a class="pill active" href="../contact/index.html">Contattaci</a>
+          </div>
+          <label class="language-switcher" aria-label="Seleziona lingua"><span class="sr-only">Lingua</span><select data-language-select><option value="it">IT</option><option value="en">EN</option><option value="fr">FR</option><option value="de">DE</option><option value="es">ES</option><option value="pt">PT</option><option value="nl">NL</option><option value="pl">PL</option><option value="sv">SV</option><option value="da">DA</option><option value="ro">RO</option></select></label>
+        </nav>
+      </header>
+      <main>
+        <section class="hero page-hero">
+          <div class="container hero-grid">
+            <div class="reveal">
+              <p class="eyebrow">Your Vision, Our Expertise</p>
+              <h1>Let’s shape your next format.</h1>
+              <p class="lead">Tell us about the venue, audience, timing and ambition. We will help translate the idea into a cultural technology experience.</p>
+            </div>
+            <aside class="side-manifesto reveal">Tailored technology for meaningful cultural impact</aside>
+          </div>
+        </section>
+        <section class="section">
+          <div class="container contact-grid">
+            <div class="contact-team reveal">
+              <img src="../assets/team.png" alt="Atelier Bris team al lavoro su regia e sistemi digitali immersivi" />
+            </div>
+            <div class="contact-card reveal">
+              <p class="eyebrow">Get in Touch</p>
+              <h2>Contattaci</h2>
+              <div class="contact-list">
+                <p><strong>Email</strong><br />hello@atelierbris.com</p>
+                <p><strong>Social</strong><br />Instagram · LinkedIn · YouTube</p>
+                <p><strong>Focus</strong><br />Apps · Experiences · Immersive formats · VR · CMS</p>
+              </div>
+            </div>
+            <form class="contact-form reveal" action="mailto:hello@atelierbris.com" method="post" enctype="text/plain">
+              <input name="name" autocomplete="name" placeholder="Nome" required />
+              <input name="email" type="email" autocomplete="email" placeholder="Email" required />
+              <input name="project" placeholder="Tipo di progetto" />
+              <textarea name="message" placeholder="Raccontaci l’idea" required></textarea>
+              <button class="btn light" type="submit">Invia richiesta →</button>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer class="site-footer">
+        <div class="container footer-grid">
+          <div class="footer-brand"><img src="../assets/atelier-bris-logo-white.png" alt="Atelier Bris - Technology for Culture" /><p>Technology for a brighter cultural tomorrow</p></div>
+          <a class="btn" href="../contact/index.html">Get in Touch →</a>
+          <div class="footer-links"><a href="../apps/index.html">Apps</a><a href="../experiences/index.html">Experiences</a><a href="../contact/index.html">Contact</a></div>
+        </div>
+      </footer>
+    </div>
+    <script src="../script.js"></script>
+  </body>
+</html>
