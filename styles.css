@@ -124,7 +124,7 @@ img {
 .nav-links .pill {
   padding: 12px 25px;
   border: 1px solid rgba(255, 255, 255, 0.8);
-  border-radius: 12px;
+  border-radius: 0;
 }
 
 .language-switcher {
@@ -138,7 +138,7 @@ img {
   height: 38px;
   padding: 0 9px;
   border: 1px solid rgba(255, 255, 255, 0.22);
-  border-radius: 9px;
+  border-radius: 0;
   background: #07111a;
   color: #fff;
   font: inherit;
@@ -165,7 +165,7 @@ img {
   width: 46px;
   height: 46px;
   border: 1px solid rgba(255, 255, 255, 0.22);
-  border-radius: 12px;
+  border-radius: 0;
   background: rgba(255, 255, 255, 0.04);
   color: #fff;
   cursor: pointer;
@@ -316,7 +316,7 @@ h3 {
   min-height: 48px;
   padding: 0 25px;
   border: 1px solid rgba(255, 255, 255, 0.82);
-  border-radius: 12px;
+  border-radius: 0;
   background: rgba(255, 255, 255, 0.06);
   color: #fff;
   font-size: 0.78rem;
@@ -541,7 +541,7 @@ h3 {
   display: grid;
   place-items: center;
   border: 1px solid rgba(255, 255, 255, 0.72);
-  border-radius: 12px;
+  border-radius: 0;
   color: #fff;
   font-weight: 900;
 }
@@ -1026,7 +1026,7 @@ html.js .reveal.visible {
     color: #fff;
     border: 1px solid rgba(255, 255, 255, 0.11);
     background: rgba(255, 255, 255, 0.07);
-    border-radius: 12px;
+    border-radius: 0;
   }
 
   .hero-grid,
