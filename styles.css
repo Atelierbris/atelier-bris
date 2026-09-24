@@ -1585,6 +1585,7 @@ html.js .reveal.visible {
   .universe-map { grid-template-columns: repeat(2,1fr); padding-bottom: 86px; }
   .universe-core { grid-column: span 2; grid-row: 1; }
   .universe-event-crew { position: static; width: auto; grid-column: span 2; }
+  .universe-site-manager { position: static; width: auto; transform: none; grid-column: span 2; }
   .universe-principles .container { grid-template-columns: repeat(3, 1fr); }
 }
 
@@ -1597,9 +1598,10 @@ html.js .reveal.visible {
   .universe-dashboard-grid, .universe-kpis { grid-template-columns: 1fr; }
   .universe-trust > .container > div, .universe-capability-grid, .universe-metrics .container, .universe-screen-grid { grid-template-columns: 1fr; }
   .universe-trust span, .universe-metrics .container > div { border-right: 0; border-bottom: 1px solid var(--line); }
-  .universe-map { grid-template-columns: 1fr; }
+  .universe-map { grid-template-columns: 1fr; min-height: 0; gap: 12px; padding-bottom: 28px; }
   .universe-core { grid-column: 1; }
   .universe-event-crew { grid-column: 1; }
+  .universe-site-manager { grid-column: 1; }
   .universe-spec-heading { align-items: start; flex-direction: column; }
   .universe-spec-grid { grid-template-columns: 1fr; }
   .universe-detail-hero { min-height: 0; padding: 118px 0 58px; }
