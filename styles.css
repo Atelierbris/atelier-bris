@@ -1563,6 +1563,14 @@ html.js .reveal.visible {
 .universe-detail-hero h1 span { color: var(--universe); }
 .universe-detail-hero .lead { max-width: 690px; }
 .universe-detail-map { padding-top: 34px; padding-bottom: 34px; }
+.universe-detail-map .universe-map { grid-template-rows: repeat(2, 72px); min-height: 298px; padding-top: 18px; }
+.universe-detail-map .universe-production-manager { grid-column: 1; grid-row: 1; position: static; width: auto; transform: none; }
+.universe-detail-map .universe-event-crew { grid-column: 2; grid-row: 1; position: static; width: auto; transform: none; }
+.universe-detail-map .universe-core { grid-column: 3; grid-row: 1 / span 2; }
+.universe-detail-map .universe-radar { grid-column: 4; grid-row: 1; }
+.universe-detail-map .universe-tappe { grid-column: 5; grid-row: 1; }
+.universe-detail-map .universe-call-manager { grid-column: 1; grid-row: 2; }
+.universe-detail-map .universe-inline { grid-column: 2; grid-row: 2; }
 .universe-web-apps { border-top: 1px solid var(--line); }
 .universe-app-list { display: grid; gap: 10px; }
 .universe-app-list a { display: grid; grid-template-columns: 54px minmax(0, 1fr) auto; gap: 24px; align-items: center; min-height: 112px; padding: 22px 28px; border: 1px solid rgba(70,191,255,.28); background: rgba(2,12,22,.52); color: var(--text); transition: transform .3s ease, border-color .3s ease, background .3s ease; }
@@ -1586,6 +1594,17 @@ html.js .reveal.visible {
   .universe-core { grid-column: span 2; grid-row: 1; }
   .universe-event-crew { position: static; width: auto; grid-column: span 2; }
   .universe-site-manager { position: static; width: auto; transform: none; grid-column: span 2; }
+  .universe-detail-map .universe-map { grid-template-rows: none; }
+  .universe-detail-map .universe-production-manager,
+  .universe-detail-map .universe-event-crew,
+  .universe-detail-map .universe-core,
+  .universe-detail-map .universe-radar,
+  .universe-detail-map .universe-tappe,
+  .universe-detail-map .universe-call-manager,
+  .universe-detail-map .universe-inline { grid-column: auto; grid-row: auto; }
+  .universe-detail-map .universe-production-manager,
+  .universe-detail-map .universe-event-crew,
+  .universe-detail-map .universe-core { grid-column: span 2; }
   .universe-principles .container { grid-template-columns: repeat(3, 1fr); }
 }
 
@@ -1602,6 +1621,9 @@ html.js .reveal.visible {
   .universe-core { grid-column: 1; }
   .universe-event-crew { grid-column: 1; }
   .universe-site-manager { grid-column: 1; }
+  .universe-detail-map .universe-production-manager,
+  .universe-detail-map .universe-event-crew,
+  .universe-detail-map .universe-core { grid-column: 1; }
   .universe-spec-heading { align-items: start; flex-direction: column; }
   .universe-spec-grid { grid-template-columns: 1fr; }
   .universe-detail-hero { min-height: 0; padding: 118px 0 58px; }
