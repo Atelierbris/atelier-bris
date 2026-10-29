@@ -11,7 +11,7 @@ function setMenu(open) {
   body.classList.toggle("menu-open", open);
   if (toggle) {
     toggle.setAttribute("aria-expanded", String(open));
-    toggle.setAttribute("aria-label", open ? "Chiudi menu" : "Apri menu");
+    toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
   }
 }
 
@@ -55,24 +55,3 @@ const revealObserver = new IntersectionObserver(
 );
 
 document.querySelectorAll(".reveal").forEach((el) => revealObserver.observe(el));
-
-const languageSelect = document.querySelector("[data-language-select]");
-const localeNames = {
-  it: "Italiano", en: "English", fr: "Francais", de: "Deutsch", es: "Espanol",
-  pt: "Portugues", nl: "Nederlands", pl: "Polski", sv: "Svenska", da: "Dansk", ro: "Romana"
-};
-
-function applyLanguage(locale) {
-  document.documentElement.lang = locale;
-  document.documentElement.dataset.locale = locale;
-  if (languageSelect) languageSelect.value = locale;
-  localStorage.setItem("atelier-bris-language", locale);
-}
-
-if (languageSelect) {
-  const savedLocale = localStorage.getItem("atelier-bris-language");
-  const browserLocale = navigator.language.slice(0, 2);
-  const locale = savedLocale || (localeNames[browserLocale] ? browserLocale : "it");
-  applyLanguage(locale);
-  languageSelect.addEventListener("change", (event) => applyLanguage(event.target.value));
-}
